@@ -1,0 +1,108 @@
+* {font-family: 'Rubik', sans-serif;}
+
+.reviews {  
+    background: $background;
+    padding-top: 50px;
+    position: relative;
+    min-height: 780px;
+    &__title {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+        color: #0B132A;
+    }
+    &__descr {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #4F5665;
+        padding-top: 20px;
+    }
+    &__slider {
+        padding-top: 60px;
+        padding-left: 150px;
+        display: flex;
+        align-items:center;       
+        justify-content: space-between;
+        
+        &__item {
+            width: 400px;
+            height: 230px;
+            border: 2px solid #DDDDDD;
+            background: #FFFFFF;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 230px 50px;
+            justify-content: space-between;  
+            grid-template-rows: 50px 100px;
+            row-gap: 10px;
+            padding: 30px 30px 30px 30px;
+            transition: all .6s;
+            margin-right: 50px;
+            &:hover {
+                border: 2px solid #F53838;
+                transition: all .6s;
+                cursor: pointer;
+                
+            }
+            
+            &-user {
+                display: grid;
+                grid-template-columns: minmax(50px, auto) minmax(112px, auto);
+                grid-template-rows: 18px minmax(14px, auto);
+                row-gap: 5px;
+                
+                &-location {
+                    grid-column: 2 / 3;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #4F5665;
+                }
+                &-nickname {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;  
+                    display: flex;
+                    color: #0B132A;
+                }
+            }
+            &-rating {
+                display: flex;
+                text-align: center;
+                align-items:center;
+                justify-content: space-between;
+            }
+            &-text {
+                grid-column: 1 / 3;
+                font-size: 16px;
+                line-height: 30px;              
+                display: flex;
+                align-items: center;
+                color: #0B132A;
+                align-items: start;
+            }
+        }
+    }
+    &__arrows {
+        width: 140px;
+        height: 60px;
+        position: absolute;
+        display: flex;
+        right: 150px;
+        padding-top: 60px;
+        justify-content: space-between; 
+        &-radius {
+            border-radius: 100%;
+            border: 2px solid #F53838;
+            height: 60px;
+            width: 60px;
+            justify-content: center;
+            display: flex;
+            align-items: center; 
+            fill: black;
+            cursor: pointer;
+            transition: all .4s;        
+        }
+    }
+}

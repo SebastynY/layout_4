@@ -1,0 +1,22 @@
+* {font-family: 'Rubik', sans-serif;}
+.network{
+    padding-top: 110px;
+    background: $background;
+    &__title {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+        color: #0B132A;
+    }
+    &__descr {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #4F5665;
+        padding-top: 20px;
+    }
+    &__map {
+        padding-top: 105px;
+    }   
+}
